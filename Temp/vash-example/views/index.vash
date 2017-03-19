@@ -1,0 +1,7 @@
+@html.extend('layout', function(model){
+    
+    @html.block('content', function(model){   
+        <h2>@model.name</h2>
+    })
+
+})

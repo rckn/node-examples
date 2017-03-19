@@ -1,0 +1,9 @@
+<html>      
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>@model.greeting</h1>
+        @html.block('content')
+    </body>
+</html>

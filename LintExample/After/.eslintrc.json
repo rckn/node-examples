@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+
+         "brace-style" : [
+             "error"
+        ],
+        "space-before-blocks" : [
+            "error",
+            "always"
+        ],
+        "object-curly-spacing" : [
+         "error", 
+         "always"
+         ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
