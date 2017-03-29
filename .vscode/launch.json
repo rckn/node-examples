@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/HttpRouting/01_app.js",
+            "program": "${workspaceRoot}/StructureExamples/CustomExample/app.js",
             "cwd": "${workspaceRoot}"
         },
         {

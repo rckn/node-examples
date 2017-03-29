@@ -24,6 +24,8 @@ var getClient = function(id, cb) {
 
 module.exports.getClient = getClient;
 
+
+// This is a work in progress does not work yet!
 var getStreamClient = (id, cb) => {
     var readStream = fs.createReadStream(__dirname + `/Clients/${id}.json`);
     var parser = JSONStream.parse('.Name');
