@@ -1,6 +1,23 @@
   {
     "Id": 1,
     "Name": "Test Client",
-    "Token": "ABC1234",
-    "Customers": null
+    "Address": {
+      "Road": "Sofiendalsvej",
+      "Number": 1
+    }, "Customers": [
+      {
+        "id" : 1,
+         "name" : "Hans"
+      },  {
+        "id" : 2,
+         "name" : "Gert"
+      },  {
+        "id" : 3,
+         "name" : "Signe"
+      },  {
+        "id" : 4,
+         "name" : "Knud"
+      }
+    ],
+    "Token": "ABC1234"
   }
