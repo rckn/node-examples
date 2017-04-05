@@ -12,4 +12,4 @@ http.createServer(function listener(req,res) {
 
 }).listen(1337, '127.0.0.1');
 // We can see the request respone in chrome in the 
-// f12 developer tools -> network
+// f12 developer tools -> networkno

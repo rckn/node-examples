@@ -1,0 +1,9 @@
+<h1>Books</h1>
+<ul>
+<% books.forEach(function(book)  { %>
+    <li>
+        <h2><%= book.name %></h2>
+        <h3>Published: <%= book.year %></h3>
+    </li>
+<% }); %>
+</ul>

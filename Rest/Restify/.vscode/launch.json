@@ -8,13 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/Rest/restify/app.4.js",
-            "cwd": "${workspaceRoot}"
+            "program": "${workspaceRoot}\\app.3.js"
         },
         {
             "type": "node",
             "request": "attach",
             "name": "Attach to Process",
+            "address": "localhost",
             "port": 5858
         }
     ]
