@@ -1,6 +1,6 @@
 const router = require('express').Router(),
     User = require('../Models/userModel'),
-    userController = require('../Controllers/userController')(User);
+    userController = require('../Controllers/userController')(User),
     jwt = require('jsonwebtoken');
 
 module.exports = (app) => {

@@ -8,18 +8,19 @@ var port = process.env.PORT || 3000;
 app.listen(port);
 
 // could also leave out the '/' route
-app.use((req, res, next) => {
-    console.log(`Request url is '${req.url}'`);
-    // call the next middleware (get will be the next middleware)
-    next();
-});
+// app.use((req, res, next) => {
+//     console.log(`Request url is '${req.url}'`);
+//     // call the next middleware (get will be the next middleware)
+//     next();
+// });
 
 app.use('/assets', express
 .static(__dirname + '/public'));
 
+
 app.get('/', (req, res) => {
     // express will see that it is html
-    res.send('<html><head><link href="assets/style.css" type="text/css" rel="stylesheet"/></head><body><h1>Hello World!</h1></body></html>');
+    res.send('<html><head><link href="assets/css/style.css" type="text/css" rel="stylesheet"/></head><body><h1>Hello World!</h1></body></html>');
 });
 
 app.get('/api', (req,res) => {

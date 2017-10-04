@@ -25,4 +25,6 @@ greeter1.on('greet', function () {
     console.log('Someone greeted!');
 });
 
+
+
 greeter1.greet();

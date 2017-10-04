@@ -70,9 +70,7 @@ module.exports = (app) => {
                     req.user = decoded._doc;
                     if(req.user.name === 'Rasmus') {
                     req.user.permissions = [
-                        "admin",
-                        "user:read",
-                        "user:write"
+                        "status"
                     ]
                     }
 
@@ -93,6 +91,13 @@ module.exports = (app) => {
         }
 
     });
+
+        app.use(function (err, req, res, next) {
+  if (err.code === 'permission_denied') {
+    res.status(401).send('insufficient permissions');
+  }
+});
+
 
    
     return router;

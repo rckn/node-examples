@@ -1,20 +1,19 @@
 // Good documentation here:
-// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype 
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
 
-function Person (fname,lname,age) {
-    this.firstName = fname;
-    this.lastName = lname;
-    this.age = age;
+function Person(fname, lname, age) {
+  this.firstName = fname;
+  this.lastName = lname;
+  this.age = age;
 }
 
 Person.prototype.fullName = function() {
-    var fullname = `${this.firstName} ${this.lastName}`; // Hans Christian
+  var fullname = `${this.firstName} ${this.lastName}`; // Hans Christian
 
-    return fullname;
-}
+  return fullname;
+};
 
 var a = new Person("Hans", "Christian", 30);
-
 var fullName = a.fullName();
 
 console.log(fullName);
@@ -25,3 +24,4 @@ var b = Object.create(a);
 b.firstName = "Signe";
 
 console.log(b.fullName());
+console.log(b.age);

@@ -4,9 +4,10 @@ function greet(callback) {
         name: 'John Doe'
     }
     // callback will be called sync
-    callback(data);
+    //callback(data);
     // if you need it to be async
     setImmediate(callback, data);
+    console.log('Goodbye');
 }
 
 greet(function(data) {
