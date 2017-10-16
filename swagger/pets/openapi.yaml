@@ -4,7 +4,7 @@ info:
   description: "A api example"
   title: "Endpoints Example"
   version: "1.0.0"
-host: "localhost:3555"
+#host: "./"
 # [END swagger]
 basePath: "/api/"
 consumes:
@@ -12,7 +12,7 @@ consumes:
 produces:
 - "application/json"
 schemes:
-- "http"
+  [http, https]
 paths:
   "/echo":
     post:
