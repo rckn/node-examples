@@ -3,7 +3,8 @@ const mongoose = require('mongoose'),
  bodyParser = require('body-parser'),
  bookRouter = require('./src/Routes/bookRouter');
 
- 
+mongoose.Promise = global.Promise;
+
 const app = express();
 
 app.use(bodyParser.json())

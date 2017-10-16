@@ -8,7 +8,8 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceRoot}/Temp/expresspost/app.js",
+      "program":
+        "${workspaceRoot}/Persistence/05_mongo-example-auth-authorization/app.js",
       "cwd": "${workspaceRoot}"
     },
     {

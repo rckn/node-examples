@@ -56,6 +56,7 @@ module.exports = (book) => {
            if (req.body._id) {
             // delete vs null: 
             // http://stackoverflow.com/questions/1947995/when-should-i-use-delete-vs-setting-elements-to-null-in-javascript
+            // use delete instead of null to avoid enumeration of the id
             delete req.body._id;
         }
 
