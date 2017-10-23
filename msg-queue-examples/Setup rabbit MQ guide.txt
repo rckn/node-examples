@@ -1,0 +1,15 @@
+docker pull rabbitmq
+// or docker pull rabbitmq:3-management
+
+// always remember parameters before executing image (eg. rabbitmq or with tag rabbitmq:3-management)
+
+docker run -d -p 3600:15672 -p 4369:4369 -p 5671-5672:5671-5672 -p 25672:25672 --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=rasck -e RABBITMQ_DEFAULT_PASS=rasck123 rabbitmq:3-management
+
+// On rabbitmq image your can enable management plugin:
+docker exec some-rabbit rabbitmq-plugins enable rabbitmq_management
+
+docker ps // active containers
+docker ps -a // all containers, active and deactive
+dokcer image ls // list of all images
+docker rm <container name> // remove container
+

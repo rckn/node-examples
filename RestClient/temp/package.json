@@ -1,0 +1,16 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "guid": "0.0.12",
+    "request": "^2.83.0"
+  }
+}

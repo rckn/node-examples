@@ -11,8 +11,20 @@ app.get('/', (req,res) => {
     res.render('index');
 });
 
+// app.get('/book/:id', (req,res) => {
+//     mongoose.find('id', (err, result) => {
+        
+//         res.render('book', { id: req.params.id });
+//     });
+    
+// });
+
 app.get('/book/:id', (req,res) => {
-    res.render('book', { id: req.params.id });
+    mongoose.find('id', (err, result) => {
+        
+        res.render('book', { id: req.params.id });
+    });
+    
 });
 
 

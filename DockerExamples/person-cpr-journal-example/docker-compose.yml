@@ -1,0 +1,26 @@
+version: '2'
+services:
+  journal:
+    build: ./journal
+    volumes:
+        - .:/app
+    ports:
+        - "3000:3000"
+    restart: always
+    command: npm start
+  notification:
+    build: ./notification
+    volumes:
+        - .:/app
+    ports:
+        - "4000:3000"
+    restart: always
+    command: npm start
+  person:
+    build: ./person
+    volumes:
+        - .:/app
+    ports:
+        - "5000:3000"
+    restart: always
+    command: npm start
